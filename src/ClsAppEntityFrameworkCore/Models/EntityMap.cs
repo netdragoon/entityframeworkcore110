@@ -1,21 +1,17 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 namespace ClsAppEntityFrameworkCore.Models
 {
     public abstract class EntityMap<T>
         where T: class, new()
     {
-        public abstract void Map(EntityTypeBuilder<T> entity);
+        public abstract void Map(EntityTypeBuilder<T> entity);            
     }
 
     public class ClientMap : EntityMap<Client>
     {
         
-        public override void Map(EntityTypeBuilder<Client> entity)
+        public override void Map(EntityTypeBuilder<Client> entity)            
         {
             entity.ToTable("Client");
 

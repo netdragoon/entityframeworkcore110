@@ -52,16 +52,7 @@ namespace ClsAppEntityFrameworkCore
                 //    .Collection(a => a.Phones)
                 //    .Query()
                 //    .Where(w => w.Active == true)
-                //    .Load();
-
-                System.Console.WriteLine(5.ToString().PadLeft(6,'0'));
-                System.Console.WriteLine(67.ToString().PadLeft(6, '0'));
-                System.Console.WriteLine(19.ToString().PadLeft(6, '0'));
-                System.Console.WriteLine(9.ToString().PadLeft(6, '0'));
-
-                System.Console.WriteLine(string.Format("{0:d5}", 1));
-                System.Console.WriteLine(string.Format("{0:000000}", 10));
-                System.Console.WriteLine(string.Format("{0:000000}", 67));
+                //    .Load();                  
 
             }
         }
